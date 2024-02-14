@@ -5,9 +5,7 @@ ENV PYTHONUNBUFFERD=1
 
 WORKDIR /src
 
-# pipを使ってpoetryをインストール
-
-# poetryの定義ファイルをコピー(存在する場合)
+# 依存関係を示したファイルをコピー
 COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
