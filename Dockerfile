@@ -11,4 +11,4 @@ COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
 # uvicornのサーバーを立ち上げる
-ENTRYPOINT [ "poetry", "run", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--reload" ]
+ENTRYPOINT [ "uvicorn", "api.main:app", "--host", "0.0.0.0", "--reload" ]
