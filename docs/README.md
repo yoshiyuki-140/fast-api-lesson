@@ -13,7 +13,7 @@ cd fast-api-lesson # ディレクトリ移動
 ## 2. Dockerの起動
 
 ```bash
-docker-compose up -d
+docker compose up
 ```
 
 
