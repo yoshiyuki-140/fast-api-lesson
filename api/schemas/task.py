@@ -14,4 +14,4 @@ class Task(BaseModel):
     """
     id:     int
     title:  str | None = Field(None, example="クリーニングを取りに行く")
-    done:   bool | None = Field(None, example="完了フラグ")
+    done:   bool = Field(False, description="完了フラグ")
